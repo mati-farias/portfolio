@@ -12,7 +12,7 @@ export const projects = [
     title: 'Project Manager',
     description: "A complete project-manager app. You can create projects and tasks for those projects. You can assign them to different users and establish due-date for them",
     image: '/images/Dashboard-project-manager.png',
-    tags: ['Tailwind', 'HTML', 'CSS', 'Tailwind', 'JQuery'],
+    tags: ['Tailwind', 'PHP', 'Laravel', 'Artisan', 'React JS', 'Node JS'],
     source: 'https://github.com/mati-farias/project-manager',
     visit: 'https://github.com/mati-farias/project-manager',
     id: 1,
