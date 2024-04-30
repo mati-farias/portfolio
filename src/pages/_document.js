@@ -32,6 +32,7 @@ export default class MyDocument extends Document {
       <Html lang='en-GB'>
         <Head>
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+          <link rel="icon" href="/favicon.svg" />
           <meta name="title" content="Matias Farias - Web Developer" />
           <meta name="description" content="Matias Farias, is a Web Developer with several years of experience." />
           <meta property="og:type" content="website" />
