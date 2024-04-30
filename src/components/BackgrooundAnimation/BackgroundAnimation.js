@@ -5,8 +5,8 @@ const BackgroundAnimation = () => (
   <div className={styles.backgroundAnimation}>
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      width='1008'
-      height='1008'
+      width='1000'
+      height='820'
       fill='none'
      opacity="0.5"
       >
