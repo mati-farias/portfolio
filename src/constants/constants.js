@@ -47,7 +47,7 @@ export const projects = [
   {
     title: 'Godot game',
     description: "This is just a simple game I made. It's a 2D platformer game with a lot of different levels and enemies. I used the Godot Engine to create the game and the Godot Game Engine to handle the game logic and physics. If you want to try it, reach out and I cand send you the source code or executable file!.",
-    image: 'public\images\Godot game.png',
+    image: '/images/Godot-game.png',
     tags: ['Godot'],
     source: 'https://github.com/mati-farias/AudioTranscription-app',
     visit: 'https://audio-transcriptions-app.vercel.app/',
