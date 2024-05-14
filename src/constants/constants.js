@@ -27,15 +27,6 @@ export const projects = [
     id: 3,
   },
   {
-    title: 'Cat Lover APP',
-    description: "This is a fun app where you can find cute, funny pictures and gifs of cats! You can share the pic/gif with a share link and your friend will be able to see it.",
-    image: '/images/CatLovers.png',
-    tags: ['Javascript', 'React', 'Next Js', 'Rest API'],
-    source: 'https://github.com/mati-farias/cat-lover-app',
-    visit: 'https://cat-lover-app.vercel.app/',
-    id: 4,
-  },
-  {
     title: 'Audio-Transcription app',
     description: "The Transcript App allows you to upload an audio file involving up to a two people conversation and receive a transcription of the audio in a convinient format. Upload your audio file (mp3, wav, etc.) and the app will return a beautifuly created chat. The app is built using the Gladia API, which is a powerful tool for speech recognition and transcription.",
     image: '/images/Transcript-app.png',
@@ -45,13 +36,22 @@ export const projects = [
     id: 4,
   },
   {
+    title: 'Cat Lover APP',
+    description: "This is a fun app where you can find cute, funny pictures and gifs of cats! You can share the pic/gif with a share link and your friend will be able to see it.",
+    image: '/images/CatLovers.png',
+    tags: ['Javascript', 'React', 'Next Js', 'Rest API'],
+    source: 'https://github.com/mati-farias/cat-lover-app',
+    visit: 'https://cat-lover-app.vercel.app/',
+    id: 5,
+  },
+  {
     title: 'Godot game',
     description: "This is just a simple game I made. It's a 2D platformer game with a lot of different levels and enemies. I used the Godot Engine to create the game and the Godot Game Engine to handle the game logic and physics. If you want to try it, reach out and I cand send you the source code or executable file!.",
     image: '/images/Godot-game.png',
     tags: ['Godot'],
     source: 'https://github.com/mati-farias/AudioTranscription-app',
     visit: 'https://audio-transcriptions-app.vercel.app/',
-    id: 4,
+    id: 6,
   },
   
 ];

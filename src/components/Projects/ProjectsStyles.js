@@ -1,37 +1,47 @@
 import styled from 'styled-components';
 
+export const ImgContainer = styled.div`
+  width: 100%;
+  height: 200px;  /* Set the desired fixed height */
+  overflow: hidden;
+`;
+
 export const Img = styled.img`
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
-`
+`;
 
 export const GridContainer = styled.section`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding-top: 3rem;
-padding-bottom: 3rem;
-place-items: center;
-column-gap: 1rem;
-row-gap: 3rem;
-@media ${(props) => props.theme.breakpoints.sm} {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 1.5rem;
-}
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  place-items: center;
+  column-gap: 1rem;
+  row-gap: 3rem;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+  }
+`;
 
-`
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
 `;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
@@ -40,9 +50,7 @@ export const TitleContent = styled.div`
   margin-bottom: 0.7em;
   color: #9cc9e3;
   font-size: 1.8rem;
-
 `;
-
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
@@ -71,21 +79,37 @@ export const Intro = styled.div`
   line-height: 18px;
 `;
 
-
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
-  font-style: 2rem;
+  font-size: 2rem;
   line-height: 24px;
   text-align: justify;
   margin-top: 2rem;
+  max-height: ${({ expanded }) => (expanded ? 'none' : '100px')};  /* Adjust max height based on expanded state */
+  overflow: hidden;  /* Hide overflowing text */
+  text-overflow: ellipsis;  /* Add ellipsis (...) to truncated text */
+  display: -webkit-box;
+  -webkit-line-clamp: ${({ expanded }) => (expanded ? 'none' : '4')};  /* Limit to 4 lines if not expanded */
+  -webkit-box-orient: vertical;
+  transition: max-height 0.3s ease;  /* Smooth transition */
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
-}
+    padding: .3rem;
+  }
 `;
 
+export const ReadMoreButton = styled.button`
+  background: none;
+  color: #9cc9e3;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 export const UtilityList = styled.ul`
   list-style-type: none;
@@ -96,24 +120,24 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
-transition: 0.5s;
-&:hover{
-  background: #801414;
-
-}
+  color: #d4c0c0;
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  background: #6b3030;
+  border-radius: 15px;
+  transition: 0.5s;
+  &:hover {
+    background: #801414;
+  }
 `;
 
 export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
-`
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+`;
+
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
-`
+  color: #d8bfbf;
+  font-size: 1.5rem;
+`;
